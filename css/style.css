@@ -2,8 +2,9 @@
 /* Colors */
 
 :root {
-    --primary-color: #047aed;
+    --primary-color: #0052ff;
     --secondary-color: #1c3fa8;
+    --light-color: #d7e5f3;
 
 }
 
@@ -121,7 +122,6 @@ img {
 
 .showcase-text {
     width: 500px;
-    color: #ffffff;
 }
 
 .showcase .flex {
@@ -137,3 +137,44 @@ img {
 .showcase-text h1 {
     white-space: nowrap;
   }
+
+/* Steps */
+
+.steps {
+    background-color: var(--light-color);
+}
+
+.steps .flex div {
+    max-width: 320px;
+    margin: 0 10px;
+    position: relative;
+
+}
+
+.steps .flex div:after {
+    content : "";
+    position: absolute;
+    left    : 137px;
+    right: 125px;
+    bottom  : 0;
+    height  : 1px;
+    width   : 15%;  /* or 100px */
+    border-bottom:3px solid var(--primary-color);
+  }
+
+.steps .flex {
+    flex: 1 1 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+.steps h2 {
+    white-space: nowrap;
+}
+
+.steps .sd {
+    width: 100%;
+    height: 150px;
+    margin: 20px 0 0 0;
+}
