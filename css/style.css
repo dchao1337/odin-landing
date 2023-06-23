@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+/* Colors */
+
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+
+}
+
 
 /* Basic */
 
@@ -24,6 +32,7 @@ a {
 }
 
 h1, h2 {
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
@@ -74,3 +83,57 @@ img {
     margin: 0 6px;
 }
 
+.social i {
+    transition: transform 0.2s ease-in;
+}
+
+.social i:hover {
+    transform: translateY(-5px);
+}
+
+.social i.fa-twitter {
+    color:#00adee;
+}
+
+.social i.fa-facebook {
+    color: #385998;
+}
+
+.social i.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Showcase */
+
+.showcase {
+    height: 750px;    
+    position: relative;
+    background-image: url("../images/showcase-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.showcase-text {
+    width: 500px;
+    color: #ffffff;
+}
+
+.showcase .flex {
+    justify-content: flex-start;
+  
+}
+
+
+.showcase-text p {
+    margin: 45px 0;
+}
+
+.showcase-text h1 {
+    white-space: nowrap;
+  }
