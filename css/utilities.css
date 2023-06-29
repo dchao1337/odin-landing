@@ -11,7 +11,6 @@
 .card {
     background-color: #fff;
     color: #333;
-    border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
@@ -19,14 +18,13 @@
 
 .btn {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 40px;
     cursor: pointer;
     background: var(--primary-color);
     color:#fff;
     border: none;
-    border-radius: 5px;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -128,12 +126,20 @@
     font-size: 1.2rem;
 }
 
+.ml {
+    font-size: 1.5rem;
+}
+
 .lg {
     font-size: 2rem;
 }
 
 .xl {
     font-size: 4rem;
+}
+
+.xxl {
+    font-size: 5rem;
 }
 
 /* Alert */
