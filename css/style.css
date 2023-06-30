@@ -305,7 +305,7 @@ img {
 /* Creator */
 
 .creator {
-    background-color: #ffe6e6;
+    background-color: #fad9d9;
     height: 2000px;
 }
 
@@ -316,6 +316,7 @@ img {
 
 .creator .creator-title {
     max-height: 50px;
+    margin-top: 60px;
     
 }
 .creator .creator-title h1 {
@@ -337,6 +338,7 @@ img {
     max-width: 60%;
     height: 100%;
     width: 600px;
+    flex: 2 2 0;
 }
 
 .creator .creator-intro.flex {
@@ -345,7 +347,8 @@ img {
 }
 
 .creator .creator-intro .card {
-    transform: translate(100px, 300px)
+    transform: translate(100px, 300px);
+    flex: 1 1 1;
 }
 
 .intro-img.flex {
@@ -356,6 +359,8 @@ img {
 .creator .intro-img img {
     max-height: 800px;
     max-width: 60%;
+    transform: translate(0px, -100px);
+    flex: 0 1 1;
 }
 
 /* Stats */
