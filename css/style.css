@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
 /* Colors */
 
 :root {
@@ -56,8 +58,8 @@ img {
 }
 
 .navbar .logo-text {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: bolder;
     color: #d3d3d3;
     margin: 10px 0 0 0;
 }
@@ -295,8 +297,65 @@ img {
 .projects .credit > .flex {
     margin-right: 100px;
     padding: 0 20px;
-    width: 200px;
+    width: 400px;
     justify-content: flex-end;
+}
+
+
+/* Creator */
+
+.creator {
+    background-color: #ffe6e6;
+    height: 2000px;
+}
+
+.creator > .flex {
+    flex-direction: column;
+    overflow: visible;
+}
+
+.creator .creator-title {
+    max-height: 50px;
+    
+}
+.creator .creator-title h1 {
+    text-transform: uppercase;
+    font-family: 'Caprasimo', cursive;
+    color: #ffffff;
+}
+
+.creator-intro .intro-text {
+    height: 160%;
+    max-width: 60%;
+    width: 500px;
+    z-index: 1;
+    
+}
+
+.creator-intro .seperation,
+.intro-img .seperation {
+    max-width: 60%;
+    height: 100%;
+    width: 600px;
+}
+
+.creator .creator-intro.flex {
+    align-items: flex-end;
+    max-height: 350px;
+}
+
+.creator .creator-intro .card {
+    transform: translate(100px, 300px)
+}
+
+.intro-img.flex {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.creator .intro-img img {
+    max-height: 800px;
+    max-width: 60%;
 }
 
 /* Stats */
