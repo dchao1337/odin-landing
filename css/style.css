@@ -151,7 +151,7 @@ img {
     position: relative;
 }
 
-.steps .flex div:after {
+.steps .flex .text-center:after {
     content : "";
     position: absolute;
     left    : 135px;
@@ -177,7 +177,6 @@ img {
     width: 100%;
     height: 150px;
     margin: 40px 0 0 0;
-    
 }
 
 /* About */
@@ -188,6 +187,7 @@ img {
 
 .about .container {
     overflow: visible;
+    flex-wrap: wrap;
 }
 
 .about img {
@@ -213,7 +213,7 @@ img {
 }
 
 .about .card p {
-    flex-basis: 350px;
+    flex-basis: 400px;
 }
 
 
@@ -226,12 +226,16 @@ img {
 }
 
 .break .flex {
-    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-end;
 }
 
+.break > .container > .flex {
+    width: 1000px;
+    justify-content: flex-start;
+    padding: 0 40px;
+}
 
 .break .flex p {
     white-space: nowrap;
@@ -241,10 +245,12 @@ img {
 
 /* Projects */
 
-.projects > .container.py-2 {
-    margin-top: 40px;
+.projects > .container.p-4 {
+    margin-top: 80px;
     gap: 40px;
-    height: 600px;
+    max-height: 2000px;
+    flex-wrap: wrap;
+    overflow: visible;
 }
 
 .projects .house,
@@ -254,17 +260,25 @@ img {
 }
 
 .projects .house {
+    min-width: 300px;
     height: 500px;
-    width: 300px;
+    max-width: 300px;
     border: 1px #d3d3d3 solid;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: auto;
 }
 .projects .house > img {
-    height: 500px;
+    height: 100%;
+    width: 100%;
 }
 
 .projects .house > .projects-text {
-    height: 250px;
-    padding: 30px;
+    height: 200px;
+    padding: 30px 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
 }
 
 .projects .house p {
@@ -274,6 +288,14 @@ img {
 }
 
 .projects .credit {
+    justify-content: flex-end;
+    max-width: 1200px;
+}
+
+.projects .credit > .flex {
+    margin-right: 100px;
+    padding: 0 20px;
+    width: 200px;
     justify-content: flex-end;
 }
 
