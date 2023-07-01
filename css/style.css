@@ -313,7 +313,7 @@ img {
 
 .creator {
     background-color: #fad9d9;
-    
+    margin-top: 80px;
 }
 
 .creator > .flex {
@@ -381,6 +381,7 @@ img {
     max-width: 1200px;
     margin: 40px 0;
     padding: 20px;
+    flex-direction: column;
 }
 
 .creator .creator-group .group-title {
@@ -407,7 +408,7 @@ img {
     gap: 30px;
     flex-wrap: wrap;
     flex-basis: 1;
-    width: 500px;
+    min-width: 500px;
 }
 
 
@@ -418,24 +419,64 @@ img {
 
 
 .stats {
-    max-height: 1000px;
+    max-height: 1600px;
 }
 
 .stats > .container {
     gap: 30px;
+    flex-wrap: wrap;
 }   
 
 .stats .container .stat-card.flex {
     flex-direction: column;
+    justify-content: space-between;
     width: 380px;
     height: 380px;
     border: #ffffff 3px solid;
-    flex-shrink: 0;
+    flex-shrink: 1;
     flex-grow: 0;
+    flex-basis: 1;
     text-align: center;
-    gap: 20px;
+    
 }
 
 .stats .stat-card h1 {
     font-family: 'Archivo Black', sans-serif;
 }
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .stats .stat-card h1 {
+    transition: --num 1.5s;
+    counter-set: num var(--num);
+    font: 800 40px system-ui;
+    
+  }
+
+  .stats:hover .stat-card h1::after {
+    content: counter(num);
+  }
+
+  .stats:hover .stat-card span {
+    display: none;
+  }
+
+
+  .stats:hover .stat-card h1.hou-1{
+    --num: 600;
+  }
+  .stats:hover .stat-card h1.hou-2 {
+    --num: 900;
+  }
+  .stats:hover .stat-card h1.hou-3 {
+    --num: 400;
+  }
+
+
+/* Form */
+
+
