@@ -453,7 +453,7 @@ img {
   .stats .stat-card h1 {
     transition: --num 1.5s;
     counter-set: num var(--num);
-    font: 800 40px system-ui;
+    font: 800 64px system-ui;
     
   }
 
@@ -478,5 +478,37 @@ img {
 
 
 /* Form */
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.form .container {
+    max-width: 100%;
+}
+
+.form > .container.flex {
+    background-color: var(--primary-color);
+    height: 200px;
+    overflow: visible;
+}
+
+
+.form .container .card.showcase-form {
+    box-shadow: none;
+    width: 800px;
+    height: 600px;
+    margin-bottom: -400px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.form .bg-light {
+    max-height: 1000px;
+    min-height: 600px;
+}
+
 
 
