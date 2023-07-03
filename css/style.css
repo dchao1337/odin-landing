@@ -61,8 +61,12 @@ img {
 .footer .logo-text {
     font-size: 32px;
     font-weight: bolder;
-    color: #bdbaba;
+    color: #dddbdb;
     margin: 10px 0 0 0;
+}
+
+.navbar h1.logo-text {
+    color: #c2c0c0;
 }
 
 .logo {
@@ -591,13 +595,29 @@ img {
     background-color: #464444;
 }
 
-.footer .container.flex.p-4 {
+.footer .container.flex.p-4 .leftie {
     flex-direction: column;
     align-items: flex-start;
 }
 
 .footer .container .copyright {
-    color: #bdbaba;
+    color: #dddbdb;
     padding: 0 10px;
 }
 
+
+.footer .container.flex.p-4 {
+    justify-content: space-between;
+}
+
+.footer .container.flex.p-4 a {
+    color: #dddbdb;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0 5px;
+    padding: 2px 0;
+}
+
+.footer .container.flex.p-4 a:hover {
+    border-bottom:#dddbdb solid 2px;
+}
