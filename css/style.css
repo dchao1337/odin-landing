@@ -57,7 +57,8 @@ img {
 
 }
 
-.navbar .logo-text {
+.navbar .logo-text,
+.footer .logo-text {
     font-size: 32px;
     font-weight: bolder;
     color: #bdbaba;
@@ -69,7 +70,8 @@ img {
     gap: 10px;
 }
 
-.navbar img {
+.navbar img,
+.footer img {
     width: 50px;
     height: 50px;
 }
@@ -582,4 +584,20 @@ img {
     font-size: 16px;
 }
 
+/* Footer */
+
+.footer {
+    height: 200px;
+    background-color: #464444;
+}
+
+.footer .container.flex.p-4 {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .container .copyright {
+    color: #bdbaba;
+    padding: 0 10px;
+}
 
